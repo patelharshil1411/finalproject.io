@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<link rel="stylesheet" type = "text/css" href="index.css">
+<head>
+    <h1>CHOOSING CAR FOR THE FUTURE</h1>
+</head>
+    <body onload = "load();">
+        <div class="btn-group">
+            <div>
+                <p>
+                    <h5>
+                        Below is a chart that can help you determine which car brand will be better at giving you good MPG based on your location or which car is better for the ENVIRONMENT. 
+                    </h5>
+                </p>
+                <h5>Click on the button below to find out</h5>
+                <div>
+                    <button id="highway" onclick="change('AverageHighwayMPG')">Average City MPG</button>
+                    <button id="city" onclick="change('AverageCityMPG')">Average Highway MPG</button>
+                    <a href = "#graph1" class = "down" onclick="load1()">Top car for environment</a>
+                </div>
+                <div id="my_dataviz"></div>
+                    <svg id="graph" width=1050 height=1100></svg>
+                    <svg id="graph1" width=1050 height=1100></svg>
+               
+            </div>
+        </div>
+        <footer>
+            <p>Author: Harshil Patel</p>
+          </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

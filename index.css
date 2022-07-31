@@ -1,0 +1,82 @@
+.btn-group button {
+  background-color: #808000; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+}
+button:active {
+  background: #808000;
+}
+.down {
+  background-color: #808000;
+  border: 1px solid green; /* Green border */
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+line#limit {
+  stroke: #fed966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 3;
+}
+
+.grid .tick line {
+  stroke: #9faaae;
+  stroke-opacity: 0.2;
+}
+
+h1 {
+  padding: 60px;
+  text-align: center;
+  background: #1bffd1;
+  color: rgb(13, 12, 12);
+  font-size: 30px;
+}
+h5 {
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+body {
+  background-color: coral;
+}
+
+svg {
+  background-color: rgba(245, 231, 231, 0.698);
+  padding: 20px;
+  margin: 10px;
+}
+
+footer {
+  padding: 60px;
+  text-align: center;
+  background: #1bffd1;
+  color: rgb(13, 12, 12);
+  font-size: 30px;
+}
