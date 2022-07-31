@@ -5,7 +5,7 @@
 <head>
     <h1>CHOOSING CAR FOR THE FUTURE</h1>
 </head>
-    <body onload = "load();">
+    <body onload = "load();load1()">
         <div class="btn-group">
             <div>
                 <p>
@@ -20,8 +20,12 @@
                     <a href = "#graph1" class = "down" onclick="load1()">Top car for environment</a>
                 </div>
                 <div id="my_dataviz"></div>
-                    <svg id="graph" width=1050 height=1100></svg>
-                    <svg id="graph1" width=1050 height=1100></svg>
+                    <svg id="graph" width=1050 height=1100>
+                        <text x="400" y="350">Most Efficeint</text>
+                        <line x1="0" y1="350" x2="350" y2="350" stroke="green" stroke-width="4" />
+                    </svg>
+                    <svg id="graph1" width=1050 height=1100><text x="700" y="1000">Most Efficeint</text>
+                        <line x1="700" y1="1000" x2="700" y2="50" stroke="green" stroke-width="4" /></svg>
                
             </div>
         </div>
